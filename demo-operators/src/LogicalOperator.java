@@ -52,7 +52,10 @@ public class LogicalOperator {
     int x = 5;
     int y = 10;
     int z = x += 3 * y; // 1. 3 * 10 = 30, 2. 5 + 30 ->35
-    int result18 = (x++ + 2) * x++; // result18 = ? 
+    // int result18 = x++ + (2 * x++); // result18 = ? 
+    int result18 =x++ + 2 * x++; // result18 = ? 
+    // (x++ + 2) -> 7, x -> 6
+    // 7 * 6 -> 42, x -> 7
     System.out.println("result18=" + result18);
     System.out.println("x=" + x);
   }
