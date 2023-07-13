@@ -76,7 +76,7 @@ public class JavaQuest3 {
        number_Of_DaysInMonth = 30;
        break;
        case 10:
-       MonthOfName = "Octobus";
+       MonthOfName = "October";
        number_Of_DaysInMonth = 31;
        break;
        case 11:
