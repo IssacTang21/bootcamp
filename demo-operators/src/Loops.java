@@ -32,13 +32,13 @@ public class Loops {
         sumOddNumberWithout5 += i;
       }
     }
-    System.out.println(sum + "," + sumOddNumberWithout5); 
+    System.out.println(sum + "," + sumOddNumberWithout5);
     // sum = 25
     // sumOddNumberWithout5 = 20
 
-    for (int i = 0; i < 5; ++i){
+    for (int i = 0; i < 5; ++i) {
       System.out.println("hello");
-      if (i > 2){
+      if (i > 2) {
         break;
       }
       // i = 0, hello
@@ -48,7 +48,52 @@ public class Loops {
       // break
     }
 
-    
+    // continue
+    for (int i = 0; i < 6; i++) {
+      System.out.println("hello");
+      if (i > 3) {
+        continue; // go to the next iteration
+      }
+      System.out.println("bye");
+    }
+    // i = 0, hello, bye
+    // i = 1, hello, bye
+    // i = 2, hello, bye
+    // i = 3, hello, bye
+    // i = 4, hello
+    // i = 5, hello
+    // i = 6, exit
+
+    for (int i = 0; i < 6; i++) {
+      if (i % 2 == 0 && i % 3 == 0) {
+        System.out.println("i=" + i);
+      }
+    }
+
+    // nested loop
+    for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 3; j++) {
+        System.out.println("hello");
+      }
+    } // how many hello? 12
+      // i = 0 , j = 0, hello
+      // i = 0 , j = 1, hello
+      // i = 0 , j = 2, hello
+      // i = 0 , j = 3, exit
+      // i = 1 , j = 0, hello
+      // ...
+      // i = 3 , j = 3, exit
+
+      
+    for (int i = 0; i < 5; i++) {
+      String star = " ";
+      for (int j = 0; j < 5; j++) {
+        if (j <= i) {
+          star += "*";
+        }
+      }
+      System.out.println(star);
+    }
   }
 
 }
