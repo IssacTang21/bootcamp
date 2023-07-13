@@ -116,6 +116,38 @@ public class Conditionals {
         break; // exit
       // default
     }
-  }
 
+    String Grade = "C Grade";
+    switch (Grade) {
+      case ("A Grade"):
+        System.out.println("Get a A Grade");
+        break;
+      case ("B Grade"):
+        System.out.println("Get a B Grade");
+        break;
+      case ("C Grade"):
+        System.out.println("Get a C Grade");
+        break;
+      case ("D Grade"):
+        System.out.println("Get a D Grade");
+        break;
+    }
+
+    char grade2 = 'B';
+    int pocketMoney = 100;
+    switch (grade2) {
+      case 'A':
+        pocketMoney += 100;
+        break;
+      case 'B':
+        pocketMoney += 70;
+        break;
+      case 'C':
+        pocketMoney += 20;
+        break;
+      default:
+        pocketMoney += 5;
+    }
+    System.out.println("pocketMoney=" + pocketMoney); // 170
+  }
 }
