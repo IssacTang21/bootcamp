@@ -87,13 +87,97 @@ public class Loops {
       
     for (int i = 0; i < 5; i++) {
       String star = " ";
-      for (int j = 0; j < 5; j++) {
-        if (j <= i) {
-          star += "*";
-        }
+      for (int j = 0; j <= i; j++) {
+        star += "*";
       }
       System.out.println(star);
     }
+
+     // approach 1: nested loop
+    // System.out.println() & System.out.print()
+    for (int i = 0; i < 5; i++){
+      for (int j = 0; j < i + 1; j++){
+        System.out.print("*");
+      }
+      System.out.println("");
+    }
+
+    // Approach 2: single loop & string
+    // System.out.println()
+    String str = "";
+    for (int i = 0; i < 5 ; i++){
+      str += "*";
+      System.out.println(str);
+    }
+
+    // Apporach 3:Nested loop & string
+    // System.out.println()
+    str = "";
+    for (int i = 0; i < 5; i++){
+      str = "";
+      for (int j = 0; j < i + 1; j++){
+        str += "*";
+      }
+      System.out.println(str);
+    }
+
+    //半邊菱形
+    for (int i = 0; i < 5; i++){
+      str = "";
+      for (int j = 0; j < 5; j++){
+        if (j < i + 1){
+          str += "*";
+        } else {
+          str += " ";
+        }
+      }
+      System.out.println(str);
+    }
+
+    for (int i = 4; i > 0; i--){
+      str = "";
+      for (int j = 4; j > 0; j--){
+        if (j <= i){
+          str += "*";
+        }
+      }
+      System.out.println(str);
+    }
+
+    // 菱形
+    int n = 5;
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= n - i; j++) {
+          System.out.print(" "); // 打印空格
+      }
+      for (int k = 1; k <= 2 * i - 1; k++) {
+          System.out.print("*"); // 打印星号
+      }
+      System.out.println(); // 换行
   }
 
+  // 下半部分菱形
+  for (int i = n - 1; i >= 1; i--) {
+      for (int j = 1; j <= n - i; j++) {
+          System.out.print(" "); // 打印空格
+      }
+      for (int k = 1; k <= 2 * i - 1; k++) {
+          System.out.print("*"); // 打印星号
+      }
+      System.out.println(); // 换行
+  }
+   
+
+  for (int i = 1; i < 11; i++){
+    if (i % 2 == 0){
+      System.out.println(i);
+    }
+  }
+
+  for (int i = 1; i < 11; i++){
+    if (i % 2 != 0){
+      System.out.println(i * i);
+    }
+  }
+  }
 }
