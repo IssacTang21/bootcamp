@@ -54,8 +54,7 @@ public class LogicalOperator {
     int z = x += 3 * y; // 1. 3 * 10 = 30, 2. 5 + 30 ->35
     // int result18 = x++ + (2 * x++); // result18 = ? 
     int result18 =x++ + 2 * x++; // result18 = ? 
-    // (x++ + 2) -> 7, x -> 6
-    // 7 * 6 -> 42, x -> 7
+    // 先從左到右處理++ , 再運算 -> 35 + 2 * 36 -> 107 
     System.out.println("result18=" + result18);
     System.out.println("x=" + x);
   }
