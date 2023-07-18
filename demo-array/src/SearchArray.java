@@ -37,5 +37,7 @@ public class SearchArray {
       }
     }
     System.out.println("the min value in the array:" + min);
+
+    
   }
 }

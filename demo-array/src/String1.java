@@ -43,7 +43,7 @@ public class String1 {
     }
     str = str.toUpperCase(); // the variable will change only if the = is appeared
     System.out.println(str);
-    str += str.toLowerCase(str); 
+    str += str.toLowerCase(); 
     System.out.println(str); // HELLOhello
   }
 }
