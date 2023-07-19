@@ -30,5 +30,7 @@ public class JavaQuest8 {
       // nums[i] = 5, secondmax = -10, max = 5;
     }
     System.out.println("the second max number is:" + secondMax);
+
+    System.out.println(Integer.MIN_VALUE);
   }
 }
