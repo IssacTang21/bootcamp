@@ -26,11 +26,16 @@ public class Swap {
         ch[i + 1] = temp;
       }
     }
-    str = "";
-    for ( int j = 0; j < ch.length; j++){
-      str += ch[j];
-    }
-    return str;
+
+    // approach 1
+    // str = "";
+    // for ( int j = 0; j < ch.length; j++){
+    //   str += ch[j];
+    // }
+    // return str;
+
+    // approach 2
+    return String.valueOf(ch); // static method
     
   }
 
