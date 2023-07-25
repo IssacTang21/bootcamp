@@ -1,7 +1,10 @@
 public class Car {
-int noOfWheel;
-int capacity;
-String color;
+
+  // Instance variable (Instance -> object)
+  // member variable
+private int noOfWheel;
+private int capacity;
+private String color;
 
 public void setNoOfWheel(int noOfWheel){
   this.noOfWheel = noOfWheel;
@@ -39,7 +42,9 @@ public Car(int noOfWheel, int capacity, String color){
   this.color = color;
 }
 
-
+public String fullName(){
+  return this.firstName.concat(this.lastName);
+}
 
 
 

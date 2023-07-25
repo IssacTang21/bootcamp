@@ -16,6 +16,9 @@ public class Demo {
     CarFactory carFactory = new CarFactory();
     carFactory.changeColor(car2, "white");
     System.out.println(car2.getColor()); // white
+
+    Student student = new Student("Eric", "Chan", 30);
+    
   }
 
 }

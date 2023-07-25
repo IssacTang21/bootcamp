@@ -1,7 +1,7 @@
 public class Person { // template
   // Describe the person by attribute
-  int age;
-  char gender; // week 6 -> enum
+  private int age;
+  private char gender; // week 6 -> enum
   // ...
 
   // getter
