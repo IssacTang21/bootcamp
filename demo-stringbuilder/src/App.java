@@ -36,5 +36,7 @@ public class App {
         StringBuilder str12 = new StringBuilder("hello");
         StringBuilder str13 = new StringBuilder("hello");
         System.out.println(str12 == str13); // false
+
+        System.out.println(Math.sqrt(1));
     }
 }
