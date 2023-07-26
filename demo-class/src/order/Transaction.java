@@ -31,5 +31,7 @@ public class Transaction {
     this.unitPrice = unitPrice;
   }
 
-  
+  public double subTotal(){
+ return this.quantity * this.unitPrice;
+  }
 }
