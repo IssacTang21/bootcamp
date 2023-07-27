@@ -8,10 +8,10 @@ public class Order {
   }
 
   // getTotal -> sum up subtotal
-  public int getTotal(){
-    int sum =0;
+  public double getTotal(){
+    double sum =0;
     for (int i = 0; i < this.transactions.length; i++){
-      sum += this.transactions[i].subTotal();
+      sum += this.transactions[i].subTotal(); // object.method()
     }
     return sum;
   }
