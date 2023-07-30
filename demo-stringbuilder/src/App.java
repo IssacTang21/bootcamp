@@ -10,7 +10,7 @@ public class App {
 
         String str = " hello";
         String[] strs =  str.trim().replace('k' ,'e').split(" ");
-        System.out.println(strs.length);
+        System.out.println("strs is ="+strs.length);
 
         StringBuilder s2 = new StringBuilder("start");
         // apporach 1
