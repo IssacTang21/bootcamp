@@ -45,9 +45,9 @@ public class Square {
     this.getEdge()[edgeId].setColor(color);
   }
 
-  // public void setEdge(Edge[] edges) {
-  //   this.edges = edges;
-  // }
+  public void setEdge(Edge[] edges) {
+    this.edges = edges;
+  }
 
   private Edge[] getEdge() {
     return this.edges;

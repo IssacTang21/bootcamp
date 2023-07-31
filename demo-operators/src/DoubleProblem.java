@@ -9,8 +9,7 @@ public class DoubleProblem {
   }
 
   public static void main(String[] args) {
-DoubleProblem a = new DoubleProblem();
-a.setLength(5);
+
 
 
 
