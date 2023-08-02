@@ -10,7 +10,7 @@ public class Laptop extends Machine {
   // subclass must call superclass constructor
 
   public Laptop() {
-    //super(1); // new Machine()
+    // super(1); // new Machine()
     // implicitly call superclass empty constructor
   }
 
@@ -32,6 +32,17 @@ public class Laptop extends Machine {
     this.monitor = monitor;
   }
 
+  @Override
+  public boolean equals(Object o){
+    if (this == o)
+    return true;
+    if (!(o instanceof Laptop))
+      return false;
+    Laptop laptop = (Laptop) o; // downcast
+    return Object.equals(laptop.keyboard, this.keyboard) && Object.equals(laptop.monitor, this.monitor);
+  }
+
+
   @Override // Method Overriding
   public void start() {
     super.start(); // machine start ...
@@ -43,7 +54,7 @@ public class Laptop extends Machine {
     System.out.println("laptop stop..");
   }
 
-  public void mute(){
+  public void mute() {
     this.volume = 0;
   }
 
@@ -59,7 +70,7 @@ public class Laptop extends Machine {
     machine.start();// machine start..
     machine.stop();// machine stop..
 
-    Laptop laptop2 = new Laptop();
+    Laptop laptop2 = new Laptop(); // empty constructor
     laptop2.setWeight(10.0);
     System.out.println(laptop2.getWeight());
 
@@ -67,7 +78,7 @@ public class Laptop extends Machine {
     System.out.println(laptop3.getWeight());
 
     System.out.println(Machine.staticMethod("abc", "xyz")); // abcxyz
-   // laptop3.staticMethod("bac", "xyy"); // not recommanded
+    // laptop3.staticMethod("bac", "xyy"); // not recommanded
 
   }
 

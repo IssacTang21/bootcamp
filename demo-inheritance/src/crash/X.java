@@ -1,6 +1,6 @@
 public class X extends Y {
 
-  private String name;
+  private String name; // hidding
 
   public X() {
 
