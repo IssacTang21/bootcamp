@@ -5,9 +5,11 @@ public enum Color {
   ;
 
   String code;
+  static int num = 0;
 
   private Color(String code){
     this.code = code;
+    num++;
   }
 
   public String getCode(){

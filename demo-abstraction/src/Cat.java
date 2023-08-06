@@ -2,9 +2,16 @@ public class Cat extends GameMember implements Move{
   
   String name;
 
+  public Cat(String x){
+    this.name = x;
+  }
   @Override
   public void jump(){
     this.addScore(4);
+  }
+
+  public void print(String cat){
+    System.out.println("cat"+ cat);
   }
 
   @Override
