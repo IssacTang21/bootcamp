@@ -1,4 +1,4 @@
-package hashmap;
+package hashmap1;
 
 import java.util.Objects;
 
@@ -22,8 +22,7 @@ public class Author {
   }
 
   @Override
-  public int hashcode() {
+  public int hashCode() {
     return Objects.hash(this.name);
   }
-
 }

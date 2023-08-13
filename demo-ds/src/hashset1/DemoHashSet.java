@@ -21,27 +21,28 @@ public class DemoHashSet {
       System.out.println("def is not added");
     }
 
-    // Example 2:with Override equals() method
+    // Example 2: With Override equal() method
     HashSet<Coordinate> coordinates = new HashSet<>();
     Coordinate c1 = new Coordinate(1, 1);
     Coordinate c2 = new Coordinate(1, 1);
     // c1.equals(c2)
     System.out.println(coordinates.add(c1)); // true
-    System.out.println(coordinates.add(c2)); // false
-    //hashSet add() -> Coordinate c2.equals(any of coordinates in hashset)
-    //              -> c2.equals(c1) -> true
-    //              -> HashSet not allow duplicate
-    //              -> return false
+    System.out.println(coordinates.add(c2)); // false, Coordinate equals() return true
+    // HashSet add() -> Coordinate c2.equals(any of coordinates in hashset)
+    // -> c2.equals(c1) -> true
+    // -> HashSet not allow duplicates
+    // -> return false
     System.out.println(coordinates.size()); // 1
 
     Coordinate c3 = new Coordinate(2, 1);
-    System.out.println(coordinates.add(c3)); // true
+    System.out.println(coordinates.add(c3)); // true, Coordinate equals() return false
     System.out.println(coordinates.size()); // 2
 
     // Example 3: Without Override equal() method
     HashSet<Book> books = new HashSet<>();
-    System.out.println(books.add(new Book("Eric"))); // true
-    System.out.println(books.add(new Book("Eric"))); // true, diff address
-    System.out.println(books.add(new Book("Steven"))); // true, diff address
+    System.out.println(books.add(new Book("dummy", "Eric"))); // true
+    System.out.println(books.add(new Book("dummy", "Eric"))); // true, diff address
+    System.out.println(books.add(new Book("dummy", "Steven"))); // true, diff address
+
   }
 }
