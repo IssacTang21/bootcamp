@@ -1,4 +1,3 @@
-package practiseRpg;
 public enum Element {
   FIRE,
   WATER,

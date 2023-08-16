@@ -1,4 +1,3 @@
-package practiseRpg;
 public class Warrier extends Player{
 
   

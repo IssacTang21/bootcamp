@@ -1,63 +1,43 @@
-/*
-* Given an integer array nums, return the greatest common divisor of the smallest number and largest number in nums.
+/*Given a m x n matrix grid which is sorted in non-increasing order both row-wise and column-wise,
 
-The greatest common divisor of two numbers is the largest positive integer that evenly divides both numbers.
-
+return the number of negative numbers in grid.
 
 Example 1:
-Input: nums = [2,5,6,9,10]
-Output: 2
-Explanation:
-The smallest number in nums is 2.
-The largest number in nums is 10.
-The greatest common divisor of 2 and 10 is 2.
+Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+Output: 8
+Explanation: There are 8 negatives number in the matrix.
 
 Example 2:
-Input: nums = [7,5,6,8,3]
-Output: 1
-Explanation:
-The smallest number in nums is 3.
-The largest number in nums is 8.
-The greatest common divisor of 3 and 8 is 1.
-
-Example 3:
-Input: nums = [3,3]
-Output: 3
-Explanation:
-The smallest number in nums is 3.
-The largest number in nums is 3.
-The greatest common divisor of 3 and 3 is 3.
+Input: grid = [[3,2],[1,0]]
+Output: 0
+ 
 
 Constraints:
 
-2 <= nums.length <= 1000
-1 <= nums[i] <= 1000
-*/
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 100
+-100 <= grid[i][j] <= 100 */
 public class JavaQuest49 {
   public static void main(String[] args) {
-    System.out.println(findGCD(new int[] { 2, 5, 6, 9, 10 }));// 2
-    System.out.println(findGCD(new int[] { 7, 5, 6, 8, 3 }));// 1
-    System.out.println(findGCD(new int[] { 3, 3 }));// 3
-    System.out.println(findGCD(new int[] { 10, 100, 1000 }));// 10
-    System.out.println(findGCD(new int[] { 99, 999 }));// 9
+    System.out.println(
+        countNegatives(new int[][] { { 4, 3, 2, -1 }, { 3, 2, 1, -1 }, { 1, 1, -1, -2 }, { -1, -1, -2, -3 } }));// Output:
+                                                                                                                // 8
 
+    System.out.println(countNegatives(new int[][] { { 3, 2 }, { 1, 0 } }));// Output : 0
+    System.out.println(countNegatives(new int[][] { { -100, -99, -88 }, { -1, 100, 99 } }));// Output : 4
   }
 
-  public static int findGCD(int[] nums) {
-    int max = Integer.MIN_VALUE;
-    int min = Integer.MAX_VALUE;
-
-    for (int i = 0 ; i < nums.length; i++){
-      max = Math.max(max, nums[i]);
-      min = Math.min(min, nums[i]);
+  public static int countNegatives(int[][] grid) {
+    int count = 0;
+    for ( int i = 0; i < grid.length; i++){
+      for ( int j = grid[0].length-1 ;j >=0; j--){
+        if (grid[i][j]<0){
+        count++;
+        }
+      }
     }
-
-    int gcd = 1;
-    for (int j = 1; j <= min; j++){
-      if ( max%j==0 && min%j==0)
-      gcd = j;
-    }
-  return gcd;
+  return count;
   }
 
 }

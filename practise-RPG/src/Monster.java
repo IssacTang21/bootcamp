@@ -1,5 +1,4 @@
-package practiseRpg;
-public class Monster {
+public class Monster extends Characters{
   int hp;
   int mp;
   int level;

@@ -1,4 +1,3 @@
-package practiseRpg;
 public class Player extends Characters {
   int level;
   int skillPoint;
