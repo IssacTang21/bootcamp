@@ -11,9 +11,11 @@ public class DemoHashMap2 {
     HashMap<Integer, Book> books = new HashMap<>();
     // key = Address of Byte or value of Byte?
     books.put(128, new Book("dummy", "Book1"));
-    books.put(128, new Book("dummy", "Book2"));
+    books.put(1130, new Book("dummy", "Book2"));
+    books.put(129, new Book("dummy2", "Book3"));
     System.out.println(books.size()); // 1
 
+    books.remove(129);
     HashMap<Author, Book> bookMap = new HashMap<>();
     // Author unqiue key? -> equals(), hashCode()
     Author author1 = new Author("John", 30);
@@ -21,6 +23,7 @@ public class DemoHashMap2 {
     bookMap.put(author1, new Book("dummy", "Book3"));
     bookMap.put(author2, new Book("dummy", "Book4"));
     System.out.println(bookMap.size()); // 1
+    bookMap.
 
     HashMap<Author, ArrayList<Book>> bookMap2 = new HashMap<>();
     ArrayList<Book> booklist1 = new ArrayList<>();

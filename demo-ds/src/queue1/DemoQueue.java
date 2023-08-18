@@ -1,6 +1,7 @@
 package queue1;
 
 import java.util.LinkedList;
+import java.util.Queue;
 
 public class DemoQueue {
   public static void main(String[] args) {
@@ -56,5 +57,10 @@ public class DemoQueue {
       queueNum.add(element);
     }
     System.out.println(queueNum);
+
+    int[] arr = new int[4];
+    Queue<Integer> queue9 = arr;
+
+    
   }
 }

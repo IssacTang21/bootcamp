@@ -11,7 +11,11 @@ public class Person {
     return this.age;
   }
   
-  public int getName(){
+  public String getName(){
     return this.name;
+  }
+
+  public boolean isElderly(){
+    return this.age >= 65;
   }
 }

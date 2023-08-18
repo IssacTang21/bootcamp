@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class DemoArrayDeque {
-  public static void main(String[] args) {
+  public static void main(String[] args){
     ArrayDeque<String> strings = new ArrayDeque<>();
     strings.add("abc");
     strings.add("def");
@@ -31,6 +31,7 @@ public class DemoArrayDeque {
     deque.add("abc");
     deque.addFirst("def");
     deque.addLast("ijk");
+    
 
     run1(new LinkedList<>()); // linkedlist
     run1(new ArrayDeque<>()); // array

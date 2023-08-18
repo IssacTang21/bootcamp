@@ -41,7 +41,11 @@ public class LinkedList1 {
     }
 
     List<String> parent = new ArrayList<>(); // Poly, Interface
-    
+    parent.add("string");
+    parent.add("string2");
+    parent.set(1, "3");
+    parent.add(1, "4");
+    System.out.println(parent);
 
 
 
