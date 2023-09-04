@@ -46,6 +46,7 @@ public class LinkedList1 {
     parent.set(1, "3");
     parent.add(1, "4");
     System.out.println(parent);
+    
 
 
 

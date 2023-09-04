@@ -1,5 +1,6 @@
 package hashset1;
 
+import java.util.Arrays;
 import java.util.HashSet;
 
 public class DemoHashSet {
@@ -10,6 +11,8 @@ public class DemoHashSet {
     System.out.println(strings.add("def")); // true
     System.out.println(strings.size()); // 2
 
+    int[] arr = new int[]{1,2,3};
+    HashSet<Integer> temp = Arrays.asList(arr);
     // HashSet add()
     boolean result = strings.add("abc");
     System.out.println(strings.size()); // 2

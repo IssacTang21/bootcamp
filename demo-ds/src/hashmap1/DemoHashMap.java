@@ -14,12 +14,13 @@ public class DemoHashMap {
     map.put("bcd", "I am Developer"); // entry
     System.out.println(map.size()); // 2 entries
     // Map.Entry -> Key + Value
-
+   
     // if duplicated (equals(), hashCode()), override
     map.put("abc", "hello world !!!"); // Override the entry with key "abc"
     System.out.println(map.get("abc")); // hello world !!!
     System.out.println(map.size()); // 2 entries
 
+    map.getOrDefault("abc", 0)+1;
     System.out.println(map.isEmpty()); // false
     System.out.println(map.toString()); // {bcd=I am Developer, abc=hello world !!!}
     System.out.println(map); // {bcd=I am Developer, abc=hello world !!!}

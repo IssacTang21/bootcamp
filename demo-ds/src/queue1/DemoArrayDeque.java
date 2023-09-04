@@ -23,6 +23,7 @@ public class DemoArrayDeque {
     System.out.println(strings.peek()); // ijk
     System.out.println(strings.pollFirst()); // ijk, pollFirst() = poll()
     System.out.println(strings.pollLast()); // xyz
+    
 
     Deque<String> deque = new LinkedList<>(); // Polymorhism
     Queue<String> queue = new LinkedList<>(); // Polymorhism

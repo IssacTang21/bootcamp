@@ -48,6 +48,7 @@ public class DemoArrayList {
     ArrayList<Integer> numbers3 = new ArrayList<>();
     numbers3.add(1000);
     numbers3.add(2000);
+    
 
     numbers2.addAll(numbers3); // add all items from numbers3 to numbers2
     System.out.println(numbers2.size()); // 7

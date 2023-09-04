@@ -1,6 +1,7 @@
 // Annotation: check if this interface has one abstarct method only
 // if no, compile-error
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
@@ -15,6 +16,7 @@ public interface Swimmable {
     Comparator<Person> sortByNameDesc = (Person p1, Person p2) -> {
       return p2.name.charAt(0) > p1.name.charAt(0) ? 1 : -1;
     };
+
     List<Person> persons =
         Arrays.asList(new Person("Alison"), new Person("Eric"));
     Collections.sort(persons, sortByNameDesc);

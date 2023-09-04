@@ -14,7 +14,7 @@ public class DemoHashMap2 {
     books.put(1130, new Book("dummy", "Book2"));
     books.put(129, new Book("dummy2", "Book3"));
     System.out.println(books.size()); // 1
-
+    
     books.remove(129);
     HashMap<Author, Book> bookMap = new HashMap<>();
     // Author unqiue key? -> equals(), hashCode()
@@ -23,7 +23,7 @@ public class DemoHashMap2 {
     bookMap.put(author1, new Book("dummy", "Book3"));
     bookMap.put(author2, new Book("dummy", "Book4"));
     System.out.println(bookMap.size()); // 1
-    bookMap.
+    
 
     HashMap<Author, ArrayList<Book>> bookMap2 = new HashMap<>();
     ArrayList<Book> booklist1 = new ArrayList<>();
@@ -32,7 +32,7 @@ public class DemoHashMap2 {
     ArrayList<Book> booklist2 = new ArrayList<>();
     booklist2.add(new Book("dummy", "Book3"));
     booklist2.add(new Book("dummy", "Book4"));
-
+    
     bookMap2.put(author1, booklist1);
     // Override, because author1.equals(author2) -> true
     bookMap2.put(author2, booklist2);

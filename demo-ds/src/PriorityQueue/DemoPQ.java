@@ -1,3 +1,4 @@
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -9,6 +10,7 @@ public class DemoPQ {
     queue.add("abc");
     queue.add("def");
     System.out.println(queue.poll()); // abc
+  
 
 
     //Priority: custom priority by Comparator
