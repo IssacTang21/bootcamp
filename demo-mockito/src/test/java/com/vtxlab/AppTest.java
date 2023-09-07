@@ -57,9 +57,9 @@ public class AppTest {
 
   @Test
   void testMultiply2() {
-    when(calculater.multiply(3, 8)).thenReturn(10000);
+    when(calculater.substract(3, 8)).thenReturn(10000);
     int result = checkout.multiply(3, 8); // Scenario: x <= 1
-    assertEquals(32, result);
+    assertEquals(8, result);
   }
 
 }
